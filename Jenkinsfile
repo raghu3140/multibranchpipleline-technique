@@ -14,10 +14,14 @@ pipeline
            {
             sh 'mvn --batch-mode clean'
            }
-          else
+          else if
            {
             bat 'mvn --batch-mode clean'
            }
+else
+{
+echo 'The file is cleaned'
+}
          }
        }
      }
