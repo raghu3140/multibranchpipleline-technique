@@ -10,18 +10,10 @@ pipeline
        {
         script
          {
-          if (isUnix()) 
-           {
-            sh 'mvn --batch-mode clean'
-           }
-          else if
-           {
-            bat 'mvn --batch-mode clean'
-           }
-else
-{
+         
+
 echo 'The file is cleaned'
-}
+
          }
        }
      }
